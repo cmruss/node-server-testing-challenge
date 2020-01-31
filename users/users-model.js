@@ -18,7 +18,7 @@ async function add(user) {
 
 function find() {
     return db('users')
-        .select('id', 'username', 'password', 'department');
+        .select('id', 'username', 'department');
 };
 
 function findBy(prop) {

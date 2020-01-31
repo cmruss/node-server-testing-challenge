@@ -58,4 +58,7 @@ function signToken(user) {
     return jwt.sign(payload, jwtSecret, options);
 };
 
-module.exports = router;
+module.exports = {
+    authRouter:router,
+    signToken
+}
